@@ -20,90 +20,72 @@ A modern movie streaming application built with React and Vite that provides sea
 - **State Management**: React Hooks (useState, useEffect)
 - **Utilities**: react-use (for debouncing)
 
-## Prerequisites
+## Installation
 
-Before you begin, ensure you have the following installed:
-- Node.js (v14.0.0 or higher)
-- npm or yarn package manager
-- An Appwrite account and project setup
-- TMDB API key
+### Prerequisites
 
-## 🛠️ Installation
+- Node.js and npm installed on your machine.
+- A TMDb API key. You can get one by creating an account on the TMDb website.
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/metaplay.git
-   cd metaplay
-   ```
+### Steps
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-   or
-   ```bash
-   yarn install
-   ```
+1. Clone the repository:
 
-3. **Set up environment variables**
-   
-   Create a `.env` file in the root directory and add the following:
-   ```env
-   VITE_TMDB_API_KEY=your_tmdb_api_key_here
-   VITE_APPWRITE_PROJECT_ID=your_appwrite_project_id
-   VITE_APPWRITE_DATABASE_ID=your_database_id
-   VITE_APPWRITE_COLLECTION_ID=your_collection_id
-   ```
-
-4. **Configure Appwrite Database**
-   
-   Create a collection in your Appwrite database with the following attributes:
-   - `searchTerm` (string, required)
-   - `count` (integer, required, default: 1)
-   - `movie_id` (integer, required)
-   - `poster_url` (string, required)
-
-5. **Run the application**
-   ```bash
-   npm run dev
-   ```
-   or
-   ```bash
-   yarn dev
-   ```
-6. **Open your browser**
-    Navigate to `http://localhost:5173` to see the application in action.
-
-
-## 📁 Project Structure
-
-```
-metaplay/
-├── public/
-│   ├── hero-img.png
-│   ├── metaplay.png
-│   ├── no-movie.png
-│   ├── search.svg
-│   └── star.svg
-├── src/
-│   ├── components/
-│   │   ├── MovieCard.jsx    # Individual movie card component
-│   │   ├── Navbar.jsx        # Navigation header
-│   │   ├── Search.jsx        # Search input component
-│   │   └── Spinner.jsx       # Loading spinner
-│   ├── App.jsx               # Main application component
-│   ├── appwrite.js           # Appwrite configuration and functions
-│   ├── main.jsx              # Application entry point
-│   └── index.css             # Global styles
-├── .env                      # Environment variables (create this)
-├── .gitignore
-├── index.html
-├── package.json
-├── README.md
-└── vite.config.js
+```bash
+git clone https://github.com/aditya-2k23/movie-app.git
 ```
 
-## 🔧 Configuration
+2. Navigate to the project directory:
+
+```bash
+cd movie-app
+```
+
+3. Install the dependencies:
+
+```bash
+npm install
+```
+
+4. Create a `.env.local` file in the root of the project and add the following environment variables:
+
+```env
+VITE_TMDB_API_KEY=Your TMDb API key.
+VITE_APPWRITE_PROJECT_ID=Your Appwrite project ID.
+VITE_APPWRITE_DATABASE_ID=Your Appwrite database ID.
+VITE_APPWRITE_COLLECTION_ID=Your Appwrite collection ID.
+```
+
+5. Start the development server:
+
+```bash
+npm run dev
+```
+
+6. Open the browser and go to `http://localhost:3000` to view the application.
+
+#### Optional steps
+
+7. To build the project for production, run:
+
+```bash
+npm run build
+```
+
+8. To preview the production build, run:
+
+```bash
+npm run serve
+```
+
+9. Lint the code:
+
+```bash
+npm run lint
+```
+
+
+## Configuration
 
 ### TMDB API Setup
 1. Visit [TMDB website](https://www.themoviedb.org/)
@@ -118,12 +100,3 @@ metaplay/
 4. Configure collection attributes as mentioned above
 5. Add the IDs to your `.env` file
 
-## 🙏 Acknowledgments
-
-- [TMDB](https://www.themoviedb.org/) for providing the movie database API
-- [Appwrite](https://appwrite.io/) for backend services
-- [Vite](https://vitejs.dev/) for the blazing fast build tool
-- [React](https://reactjs.org/) for the UI library
-
-
-**Happy Streaming! 🍿**
