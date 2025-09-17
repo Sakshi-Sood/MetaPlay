@@ -63,35 +63,17 @@ Before you begin, ensure you have the following installed:
    - `movie_id` (integer, required)
    - `poster_url` (string, required)
 
-## 🏃‍♂️ Running the Application
+5. **Run the application**
+   ```bash
+   npm run dev
+   ```
+   or
+   ```bash
+   yarn dev
+   ```
+6. **Open your browser**
+    Navigate to `http://localhost:5173` to see the application in action.
 
-### Development Mode
-```bash
-npm run dev
-```
-or
-```bash
-yarn dev
-```
-The application will start on `http://localhost:5173`
-
-### Production Build
-```bash
-npm run build
-```
-or
-```bash
-yarn build
-```
-
-### Preview Production Build
-```bash
-npm run preview
-```
-or
-```bash
-yarn preview
-```
 
 ## 📁 Project Structure
 
